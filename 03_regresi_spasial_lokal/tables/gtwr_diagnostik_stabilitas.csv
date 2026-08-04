@@ -1,0 +1,2 @@
+model,bandwidth_optimal,pct_lokasi_CN_gt_30,pct_lokasi_localVIF_gt_10,ambang_persen,gate_lolos,AICc,R2,effective_params
+"GTWR panel (11 fitur, N=126)",96,0.0,54.761904761904766,35.0,False,726.6014567863247,0.7563316424576014,28.51971396848216

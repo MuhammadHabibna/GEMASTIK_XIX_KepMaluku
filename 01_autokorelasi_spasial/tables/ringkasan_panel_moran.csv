@@ -1,0 +1,7 @@
+Tahun,Moran_I,Expected_I,z_score,p_value,Signifikan_5persen,Interpretasi
+2020,0.0296,-0.05,0.606,0.244,False,Tidak Signifikan (pola menyerupai acak)
+2021,0.1374,-0.05,1.357,0.108,False,Tidak Signifikan (pola menyerupai acak)
+2022,0.0654,-0.05,0.897,0.174,False,Tidak Signifikan (pola menyerupai acak)
+2023,0.1798,-0.05,1.917,0.041,True,Klaster Spasial Signifikan (Positif)
+2024,0.2861,-0.05,2.713,0.016,True,Klaster Spasial Signifikan (Positif)
+2025,0.2826,-0.05,2.697,0.014,True,Klaster Spasial Signifikan (Positif)

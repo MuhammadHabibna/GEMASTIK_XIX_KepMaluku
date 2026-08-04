@@ -1,0 +1,64 @@
+Kab_Kota,Provinsi,Tahun,Forecast_PoU,CI_Lower_95,CI_Upper_95,Horizon
+Buru,Maluku,2026,32.047,26.02,38.075,1
+Buru,Maluku,2027,31.734,23.21,40.259,2
+Buru,Maluku,2028,32.083,21.642,42.523,3
+Buru Selatan,Maluku,2026,34.23,28.202,40.258,1
+Buru Selatan,Maluku,2027,34.653,26.128,43.177,2
+Buru Selatan,Maluku,2028,33.875,23.435,44.316,3
+Halmahera Barat,Maluku Utara,2026,34.556,28.528,40.584,1
+Halmahera Barat,Maluku Utara,2027,34.869,26.345,43.394,2
+Halmahera Barat,Maluku Utara,2028,34.639,24.198,45.079,3
+Halmahera Selatan,Maluku Utara,2026,29.09,23.062,35.117,1
+Halmahera Selatan,Maluku Utara,2027,28.777,20.252,37.301,2
+Halmahera Selatan,Maluku Utara,2028,28.777,18.336,39.217,3
+Halmahera Tengah,Maluku Utara,2026,21.965,15.937,27.993,1
+Halmahera Tengah,Maluku Utara,2027,21.483,12.958,30.007,2
+Halmahera Tengah,Maluku Utara,2028,21.321,10.88,31.761,3
+Halmahera Timur,Maluku Utara,2026,29.098,23.07,35.126,1
+Halmahera Timur,Maluku Utara,2027,29.012,20.487,37.536,2
+Halmahera Timur,Maluku Utara,2028,29.152,18.711,39.592,3
+Halmahera Utara,Maluku Utara,2026,26.935,20.908,32.963,1
+Halmahera Utara,Maluku Utara,2027,27.567,19.042,36.091,2
+Halmahera Utara,Maluku Utara,2028,28.045,17.604,38.485,3
+Kepulauan Aru,Maluku,2026,32.778,26.75,38.806,1
+Kepulauan Aru,Maluku,2027,32.344,23.819,40.869,2
+Kepulauan Aru,Maluku,2028,32.263,21.822,42.703,3
+Kepulauan Sula,Maluku Utara,2026,34.583,28.556,40.611,1
+Kepulauan Sula,Maluku Utara,2027,35.311,26.787,43.836,2
+Kepulauan Sula,Maluku Utara,2028,35.522,25.081,45.962,3
+Kepulauan Tanimbar (Maluku Tenggara Barat),Maluku,2026,34.504,28.476,40.532,1
+Kepulauan Tanimbar (Maluku Tenggara Barat),Maluku,2027,34.609,26.084,43.133,2
+Kepulauan Tanimbar (Maluku Tenggara Barat),Maluku,2028,34.308,23.867,44.748,3
+Kota Ambon,Maluku,2026,24.643,18.615,30.671,1
+Kota Ambon,Maluku,2027,25.073,16.548,33.598,2
+Kota Ambon,Maluku,2028,24.669,14.228,35.109,3
+Kota Ternate,Maluku Utara,2026,23.531,17.504,29.559,1
+Kota Ternate,Maluku Utara,2027,22.744,14.22,31.269,2
+Kota Ternate,Maluku Utara,2028,23.117,12.677,33.558,3
+Kota Tidore Kepulauan,Maluku Utara,2026,26.558,20.53,32.586,1
+Kota Tidore Kepulauan,Maluku Utara,2027,26.342,17.817,34.866,2
+Kota Tidore Kepulauan,Maluku Utara,2028,25.956,15.515,36.396,3
+Kota Tual,Maluku,2026,30.289,24.261,36.317,1
+Kota Tual,Maluku,2027,30.375,21.851,38.9,2
+Kota Tual,Maluku,2028,30.036,19.595,40.476,3
+Maluku Barat Daya,Maluku,2026,29.401,23.373,35.428,1
+Maluku Barat Daya,Maluku,2027,29.127,20.602,37.651,2
+Maluku Barat Daya,Maluku,2028,29.467,19.027,39.908,3
+Maluku Tengah,Maluku,2026,32.776,26.748,38.804,1
+Maluku Tengah,Maluku,2027,33.045,24.52,41.569,2
+Maluku Tengah,Maluku,2028,33.032,22.592,43.473,3
+Maluku Tenggara,Maluku,2026,30.761,24.734,36.789,1
+Maluku Tenggara,Maluku,2027,30.732,22.208,39.257,2
+Maluku Tenggara,Maluku,2028,30.664,20.223,41.104,3
+Pulau Morotai,Maluku Utara,2026,30.346,24.318,36.374,1
+Pulau Morotai,Maluku Utara,2027,30.473,21.949,38.998,2
+Pulau Morotai,Maluku Utara,2028,30.444,20.004,40.884,3
+Pulau Taliabu,Maluku Utara,2026,34.068,28.04,40.096,1
+Pulau Taliabu,Maluku Utara,2027,34.011,25.486,42.535,2
+Pulau Taliabu,Maluku Utara,2028,33.438,22.998,43.879,3
+Seram Bagian Barat,Maluku,2026,33.542,27.514,39.57,1
+Seram Bagian Barat,Maluku,2027,33.51,24.986,42.035,2
+Seram Bagian Barat,Maluku,2028,33.542,23.101,43.982,3
+Seram Bagian Timur,Maluku,2026,32.279,26.251,38.307,1
+Seram Bagian Timur,Maluku,2027,32.294,23.769,40.819,2
+Seram Bagian Timur,Maluku,2028,31.885,21.445,42.326,3

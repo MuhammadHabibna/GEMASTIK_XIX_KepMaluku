@@ -1,0 +1,3 @@
+Model,MAE,RMSE
+"XGBoost (Panel, Ditala)",2.245,2.814
+ElasticNet (Panel),2.662,3.255

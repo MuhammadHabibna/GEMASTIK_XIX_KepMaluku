@@ -1,0 +1,50 @@
+RINGKASAN ANALISIS TEKS - KETAHANAN PANGAN MALUKU DAN MALUKU UTARA
+GEMASTIK XIX/2026, Divisi Penambangan Data
+
+Jumlah data mentah: 2810
+Jumlah data setelah praproses dan filter relevansi wilayah: 2266
+Rentang waktu: 2021 sampai 2026
+
+Distribusi platform:
+platform
+tiktok     1068
+twitter     678
+youtube     520
+
+Jumlah data pseudo-label kepercayaan tinggi: 1545
+F1 macro model sentimen pada data validasi: 0.9051
+F1 macro model sentimen pada data uji (test set independen): 0.9257
+Akurasi model sentimen pada data uji: 0.931
+
+Distribusi sentimen final:
+sentimen
+neutral     1008
+negative     848
+positive     410
+
+Backend embedding terbaik: TF-IDF + Truncated SVD
+Jumlah topik hasil BERTopic di luar outlier: 88
+Coherence score (c_v) model final: 0.6679
+Diversitas topik model final: 0.9148
+
+F1 macro model dasar tanpa fine-tuning: 0.9251
+Peningkatan F1 macro hasil fine-tuning: +0.0006
+
+Lima topik dengan skor prioritas tertinggi (volume, sentimen negatif, tren):
+Kenaikan Harga Beras dan Pangan: skor 0.7235, 81 dokumen, 55.56% negatif
+Diskusi Program Makan Bergizi Gratis: skor 0.6176, 46 dokumen, 54.35% negatif
+Kelaparan dan Kehidupan Masyarakat Adat: skor 0.5997, 37 dokumen, 86.49% negatif
+Komentar Menu Makan Bergizi Gratis: skor 0.5953, 56 dokumen, 32.14% negatif
+Kritik Pajak dan Kebijakan Pemerintah: skor 0.5375, 33 dokumen, 75.76% negatif
+
+Sepuluh topik dengan jumlah dokumen terbanyak beserta nama hasil penentuan otomatis:
+Topic 0: Kenaikan Harga Beras dan Pangan (81 dokumen)
+Topic 1: Komentar Menu Makan Bergizi Gratis (56 dokumen)
+Topic 2: Ketahanan Pangan Provinsi Maluku (51 dokumen)
+Topic 3: Sekolah Rakyat dan Anak (48 dokumen)
+Topic 4: Diskusi Program Makan Bergizi Gratis (46 dokumen)
+Topic 5: Dukungan kepada Pemerintah Daerah (43 dokumen)
+Topic 6: Diskusi Umum tentang MBG (41 dokumen)
+Topic 7: Kemiskinan dan Kerawanan Pangan (41 dokumen)
+Topic 8: Perbandingan Program MBG (39 dokumen)
+Topic 9: Bantuan Sosial Presiden (37 dokumen)

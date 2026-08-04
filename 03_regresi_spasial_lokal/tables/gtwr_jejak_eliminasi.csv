@@ -1,0 +1,2 @@
+iterasi,fitur_dibuang,alasan,jumlah_fitur_tersisa,bandwidth_optimal,pct_lokasi_CN_gt_30,pct_lokasi_VIF_gt_10,gate_lolos
+0,X20_RT_Akses_Sanitasi_Layak,"bug data (duplikasi level-provinsi, lihat Tahap 1b / Bagian 2 ringkasan)",10,110,0.0,7.142857142857142,True

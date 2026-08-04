@@ -1,0 +1,2 @@
+variant,bandwidth_optimal,pct_lokasi_CN_gt_30,pct_lokasi_localVIF_gt_10,ambang_persen,gate_lolos,AICc,R2,Adj_R2
+A,16,100.0,100.0,35.0,False,-1018.4777513960304,0.9816367648567109,-1.1052479105635844

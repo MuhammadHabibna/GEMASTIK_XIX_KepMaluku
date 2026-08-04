@@ -1,0 +1,2 @@
+model,bandwidth_optimal,pct_lokasi_CN_gt_30,pct_lokasi_localVIF_gt_10,ambang_persen,gate_lolos,AICc,R2,Adj_R2
+GWR Parsimoni (3 fitur),21,0.0,0.0,35.0,True,122.90479766311213,0.7061248480601376,0.5739572702847431

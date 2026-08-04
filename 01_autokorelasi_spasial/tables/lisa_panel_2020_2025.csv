@@ -1,0 +1,127 @@
+Tahun,Kab_Kota,Provinsi,Y_PoU,Local_I,p_value,Kuadran,Signifikan,Klaster_LISA
+2020,Kepulauan Tanimbar (Maluku Tenggara Barat),Maluku,37.05,0.0013,0.344,Low-Low,False,Tidak Signifikan
+2020,Maluku Tenggara,Maluku,36.42,0.0135,0.355,Low-Low,False,Tidak Signifikan
+2020,Maluku Tengah,Maluku,43.07,-0.1749,0.346,High-Low,False,Tidak Signifikan
+2020,Buru,Maluku,39.15,0.0914,0.291,High-High,False,Tidak Signifikan
+2020,Kepulauan Aru,Maluku,40.42,-0.1364,0.276,High-Low,False,Tidak Signifikan
+2020,Seram Bagian Barat,Maluku,43.3,0.1258,0.384,High-High,False,Tidak Signifikan
+2020,Seram Bagian Timur,Maluku,38.31,-0.0704,0.202,High-Low,False,Tidak Signifikan
+2020,Maluku Barat Daya,Maluku,36.29,0.0097,0.394,Low-Low,False,Tidak Signifikan
+2020,Buru Selatan,Maluku,47.8,-0.0178,0.494,High-Low,False,Tidak Signifikan
+2020,Kota Ambon,Maluku,22.19,-1.99,0.01,Low-High,True,Low-High
+2020,Kota Tual,Maluku,28.96,-0.1649,0.497,Low-High,False,Tidak Signifikan
+2020,Halmahera Barat,Maluku Utara,39.54,-0.2488,0.081,High-Low,False,Tidak Signifikan
+2020,Halmahera Tengah,Maluku Utara,31.64,0.5324,0.071,Low-Low,False,Tidak Signifikan
+2020,Kepulauan Sula,Maluku Utara,43.47,0.7509,0.014,High-High,True,High-High
+2020,Halmahera Selatan,Maluku Utara,39.1,-0.2741,0.027,High-Low,True,High-Low
+2020,Halmahera Utara,Maluku Utara,38.21,-0.05,0.232,High-Low,False,Tidak Signifikan
+2020,Halmahera Timur,Maluku Utara,39.89,-0.004,0.446,High-Low,False,Tidak Signifikan
+2020,Pulau Morotai,Maluku Utara,38.76,-0.0798,0.229,High-Low,False,Tidak Signifikan
+2020,Pulau Taliabu,Maluku Utara,44.39,0.8236,0.021,High-High,True,High-High
+2020,Kota Ternate,Maluku Utara,21.78,0.7851,0.131,Low-Low,False,Tidak Signifikan
+2020,Kota Tidore Kepulauan,Maluku Utara,29.47,0.6694,0.077,Low-Low,False,Tidak Signifikan
+2021,Kepulauan Tanimbar (Maluku Tenggara Barat),Maluku,35.01,-0.0026,0.5,High-Low,False,Tidak Signifikan
+2021,Maluku Tenggara,Maluku,32.05,0.0058,0.452,High-High,False,Tidak Signifikan
+2021,Maluku Tengah,Maluku,35.1,-0.0473,0.417,High-Low,False,Tidak Signifikan
+2021,Buru,Maluku,30.87,-0.0269,0.242,Low-High,False,Tidak Signifikan
+2021,Kepulauan Aru,Maluku,31.1,-0.0048,0.44,Low-High,False,Tidak Signifikan
+2021,Seram Bagian Barat,Maluku,39.2,-0.077,0.458,High-Low,False,Tidak Signifikan
+2021,Seram Bagian Timur,Maluku,35.93,-0.1403,0.287,High-Low,False,Tidak Signifikan
+2021,Maluku Barat Daya,Maluku,25.98,0.0564,0.387,Low-Low,False,Tidak Signifikan
+2021,Buru Selatan,Maluku,40.88,0.0884,0.412,High-High,False,Tidak Signifikan
+2021,Kota Ambon,Maluku,16.23,-1.1043,0.114,Low-High,False,Tidak Signifikan
+2021,Kota Tual,Maluku,26.57,-0.1447,0.353,Low-High,False,Tidak Signifikan
+2021,Halmahera Barat,Maluku Utara,34.62,-0.3101,0.038,High-Low,True,High-Low
+2021,Halmahera Tengah,Maluku Utara,27.03,0.4217,0.036,Low-Low,True,Low-Low
+2021,Kepulauan Sula,Maluku Utara,42.17,1.0198,0.029,High-High,True,High-High
+2021,Halmahera Selatan,Maluku Utara,30.8,0.0721,0.02,Low-Low,True,Low-Low
+2021,Halmahera Utara,Maluku Utara,29.93,0.0847,0.147,Low-Low,False,Tidak Signifikan
+2021,Halmahera Timur,Maluku Utara,33.37,-0.037,0.333,High-Low,False,Tidak Signifikan
+2021,Pulau Morotai,Maluku Utara,28.87,0.1334,0.164,Low-Low,False,Tidak Signifikan
+2021,Pulau Taliabu,Maluku Utara,49.84,1.2444,0.037,High-High,True,High-High
+2021,Kota Ternate,Maluku Utara,13.6,0.8138,0.104,Low-Low,False,Tidak Signifikan
+2021,Kota Tidore Kepulauan,Maluku Utara,21.58,0.7025,0.071,Low-Low,False,Tidak Signifikan
+2022,Kepulauan Tanimbar (Maluku Tenggara Barat),Maluku,35.03,0.0209,0.441,High-High,False,Tidak Signifikan
+2022,Maluku Tenggara,Maluku,28.78,-0.2102,0.235,Low-High,False,Tidak Signifikan
+2022,Maluku Tengah,Maluku,36.9,-0.0402,0.478,High-Low,False,Tidak Signifikan
+2022,Buru,Maluku,34.38,0.1566,0.233,High-High,False,Tidak Signifikan
+2022,Kepulauan Aru,Maluku,33.74,0.035,0.402,High-High,False,Tidak Signifikan
+2022,Seram Bagian Barat,Maluku,37.77,-0.1293,0.466,High-Low,False,Tidak Signifikan
+2022,Seram Bagian Timur,Maluku,30.54,-0.0854,0.268,Low-High,False,Tidak Signifikan
+2022,Maluku Barat Daya,Maluku,27.22,0.1884,0.288,Low-Low,False,Tidak Signifikan
+2022,Buru Selatan,Maluku,29.96,-0.2075,0.133,Low-High,False,Tidak Signifikan
+2022,Kota Ambon,Maluku,24.13,-0.8537,0.143,Low-High,False,Tidak Signifikan
+2022,Kota Tual,Maluku,35.29,0.0142,0.454,High-High,False,Tidak Signifikan
+2022,Halmahera Barat,Maluku Utara,38.0,-0.7745,0.097,High-Low,False,Tidak Signifikan
+2022,Halmahera Tengah,Maluku Utara,25.51,0.6733,0.09,Low-Low,False,Tidak Signifikan
+2022,Kepulauan Sula,Maluku Utara,42.37,0.6034,0.196,High-High,False,Tidak Signifikan
+2022,Halmahera Selatan,Maluku Utara,30.67,0.1928,0.037,Low-Low,True,Low-Low
+2022,Halmahera Utara,Maluku Utara,28.38,0.2313,0.214,Low-Low,False,Tidak Signifikan
+2022,Halmahera Timur,Maluku Utara,31.48,0.0376,0.163,Low-Low,False,Tidak Signifikan
+2022,Pulau Morotai,Maluku Utara,26.8,0.2566,0.23,Low-Low,False,Tidak Signifikan
+2022,Pulau Taliabu,Maluku Utara,38.62,0.6299,0.129,High-High,False,Tidak Signifikan
+2022,Kota Ternate,Maluku Utara,24.6,0.4059,0.179,Low-Low,False,Tidak Signifikan
+2022,Kota Tidore Kepulauan,Maluku Utara,30.02,0.1624,0.15,Low-Low,False,Tidak Signifikan
+2023,Kepulauan Tanimbar (Maluku Tenggara Barat),Maluku,34.05,0.0139,0.473,High-High,False,Tidak Signifikan
+2023,Maluku Tenggara,Maluku,31.66,0.0133,0.423,High-High,False,Tidak Signifikan
+2023,Maluku Tengah,Maluku,34.62,-0.1415,0.309,High-Low,False,Tidak Signifikan
+2023,Buru,Maluku,28.23,-0.2467,0.104,Low-High,False,Tidak Signifikan
+2023,Kepulauan Aru,Maluku,31.68,0.0136,0.42,High-High,False,Tidak Signifikan
+2023,Seram Bagian Barat,Maluku,32.7,0.022,0.446,High-High,False,Tidak Signifikan
+2023,Seram Bagian Timur,Maluku,31.79,-0.0143,0.406,High-Low,False,Tidak Signifikan
+2023,Maluku Barat Daya,Maluku,26.59,-0.0393,0.497,Low-High,False,Tidak Signifikan
+2023,Buru Selatan,Maluku,38.87,0.2574,0.283,High-High,False,Tidak Signifikan
+2023,Kota Ambon,Maluku,24.12,-0.41,0.213,Low-High,False,Tidak Signifikan
+2023,Kota Tual,Maluku,29.31,-0.0497,0.349,Low-High,False,Tidak Signifikan
+2023,Halmahera Barat,Maluku Utara,37.41,-0.5654,0.126,High-Low,False,Tidak Signifikan
+2023,Halmahera Tengah,Maluku Utara,15.3,1.4232,0.03,Low-Low,True,Low-Low
+2023,Kepulauan Sula,Maluku Utara,44.37,0.9911,0.061,High-High,False,Tidak Signifikan
+2023,Halmahera Selatan,Maluku Utara,30.48,0.0761,0.003,Low-Low,True,Low-Low
+2023,Halmahera Utara,Maluku Utara,31.22,-0.0094,0.307,High-Low,False,Tidak Signifikan
+2023,Halmahera Timur,Maluku Utara,32.27,-0.0691,0.237,High-Low,False,Tidak Signifikan
+2023,Pulau Morotai,Maluku Utara,30.64,0.0074,0.324,Low-Low,False,Tidak Signifikan
+2023,Pulau Taliabu,Maluku Utara,39.21,0.8511,0.057,High-High,False,Tidak Signifikan
+2023,Kota Ternate,Maluku Utara,17.86,0.947,0.09,Low-Low,False,Tidak Signifikan
+2023,Kota Tidore Kepulauan,Maluku Utara,26.77,0.5245,0.034,Low-Low,True,Low-Low
+2024,Kepulauan Tanimbar (Maluku Tenggara Barat),Maluku,35.83,0.2876,0.292,High-High,False,Tidak Signifikan
+2024,Maluku Tenggara,Maluku,30.97,0.0583,0.119,High-High,False,Tidak Signifikan
+2024,Maluku Tengah,Maluku,34.3,0.2463,0.272,High-High,False,Tidak Signifikan
+2024,Buru,Maluku,32.66,0.2089,0.21,High-High,False,Tidak Signifikan
+2024,Kepulauan Aru,Maluku,33.39,0.2625,0.21,High-High,False,Tidak Signifikan
+2024,Seram Bagian Barat,Maluku,32.71,0.185,0.242,High-High,False,Tidak Signifikan
+2024,Seram Bagian Timur,Maluku,33.34,0.0207,0.495,High-High,False,Tidak Signifikan
+2024,Maluku Barat Daya,Maluku,30.33,-0.0199,0.197,Low-High,False,Tidak Signifikan
+2024,Buru Selatan,Maluku,33.01,0.2297,0.201,High-High,False,Tidak Signifikan
+2024,Kota Ambon,Maluku,27.62,-0.4685,0.057,Low-High,False,Tidak Signifikan
+2024,Kota Tual,Maluku,27.91,-0.4553,0.036,Low-High,True,Low-High
+2024,Halmahera Barat,Maluku Utara,33.55,-0.5771,0.061,High-Low,False,Tidak Signifikan
+2024,Halmahera Tengah,Maluku Utara,19.43,2.2665,0.005,Low-Low,True,Low-Low
+2024,Kepulauan Sula,Maluku Utara,35.11,0.3187,0.267,High-High,False,Tidak Signifikan
+2024,Halmahera Selatan,Maluku Utara,28.3,0.7522,0.002,Low-Low,True,Low-Low
+2024,Halmahera Utara,Maluku Utara,29.24,0.1377,0.166,Low-Low,False,Tidak Signifikan
+2024,Halmahera Timur,Maluku Utara,29.13,0.2049,0.103,Low-Low,False,Tidak Signifikan
+2024,Pulau Morotai,Maluku Utara,30.13,0.0468,0.141,Low-Low,False,Tidak Signifikan
+2024,Pulau Taliabu,Maluku Utara,32.64,0.2274,0.194,High-High,False,Tidak Signifikan
+2024,Kota Ternate,Maluku Utara,22.16,1.3735,0.052,Low-Low,False,Tidak Signifikan
+2024,Kota Tidore Kepulauan,Maluku Utara,29.05,0.4156,0.012,Low-Low,True,Low-Low
+2025,Kepulauan Tanimbar (Maluku Tenggara Barat),Maluku,35.76,0.3878,0.205,High-High,False,Tidak Signifikan
+2025,Maluku Tenggara,Maluku,30.99,0.0676,0.095,High-High,False,Tidak Signifikan
+2025,Maluku Tengah,Maluku,30.26,-0.0037,0.429,Low-High,False,Tidak Signifikan
+2025,Buru,Maluku,32.36,0.1924,0.137,High-High,False,Tidak Signifikan
+2025,Kepulauan Aru,Maluku,33.31,0.2835,0.132,High-High,False,Tidak Signifikan
+2025,Seram Bagian Barat,Maluku,32.94,0.0476,0.417,High-High,False,Tidak Signifikan
+2025,Seram Bagian Timur,Maluku,33.63,-0.1032,0.383,High-Low,False,Tidak Signifikan
+2025,Maluku Barat Daya,Maluku,30.73,0.0222,0.226,High-High,False,Tidak Signifikan
+2025,Buru Selatan,Maluku,36.17,0.3438,0.225,High-High,False,Tidak Signifikan
+2025,Kota Ambon,Maluku,24.78,-0.597,0.155,Low-High,False,Tidak Signifikan
+2025,Kota Tual,Maluku,30.73,0.0363,0.091,High-High,False,Tidak Signifikan
+2025,Halmahera Barat,Maluku Utara,36.09,-1.0933,0.03,High-Low,True,High-Low
+2025,Halmahera Tengah,Maluku Utara,19.03,2.0378,0.007,Low-Low,True,Low-Low
+2025,Kepulauan Sula,Maluku Utara,37.36,0.5653,0.16,High-High,False,Tidak Signifikan
+2025,Halmahera Selatan,Maluku Utara,26.77,0.9566,0.002,Low-Low,True,Low-Low
+2025,Halmahera Utara,Maluku Utara,25.35,0.2975,0.217,Low-Low,False,Tidak Signifikan
+2025,Halmahera Timur,Maluku Utara,27.76,0.3007,0.112,Low-Low,False,Tidak Signifikan
+2025,Pulau Morotai,Maluku Utara,30.71,-0.0308,0.112,High-Low,False,Tidak Signifikan
+2025,Pulau Taliabu,Maluku Utara,34.19,0.432,0.097,High-High,False,Tidak Signifikan
+2025,Kota Ternate,Maluku Utara,21.69,1.1691,0.05,Low-Low,False,Tidak Signifikan
+2025,Kota Tidore Kepulauan,Maluku Utara,28.68,0.3393,0.024,Low-Low,True,Low-Low

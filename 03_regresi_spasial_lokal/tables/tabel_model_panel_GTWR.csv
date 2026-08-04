@@ -1,0 +1,6 @@
+model,N,rentang,AICc,RMSE,R2,bandwidth,pct_CN_gt_30,pct_VIF_gt_10,gate,rujukan_utama,catatan_AICc
+GTWR-10 (pasca hapus X20),126,2020-2025,726.4347106821258,3.41098539142682,0.7187199089175121,110,0.0,7.142857142857142,True,False,Bisa dibandingkan sesama (panel); JANGAN dibandingkan dgn tabel N=21
+GTWR-12b (10 fitur) 2020-2025,126,2020-2025,726.4347106821258,3.41098539142682,0.7187199089175121,110,0.0,7.142857142857142,True,True,Bisa dibandingkan sesama (panel); JANGAN dibandingkan dgn tabel N=21
+GTWR-12b (10 fitur) 2021-2025,105,2021-2025,600.7187630961096,3.219227822315738,0.7008003310361319,99,0.0,4.761904761904762,True,False,Bisa dibandingkan sesama (panel); JANGAN dibandingkan dgn tabel N=21
+"GTWR-12d (8 fitur, IKM) 2020-2025",126,2020-2025,724.9028969244714,3.3994722339887877,0.7206155233815055,96,0.0,2.380952380952381,True,False,Bisa dibandingkan sesama (panel); JANGAN dibandingkan dgn tabel N=21
+"GTWR-12d (8 fitur, IKM) 2021-2025",105,2021-2025,596.7842845233097,3.311904173737248,0.6833254160136666,99,0.0,0.0,True,False,Bisa dibandingkan sesama (panel); JANGAN dibandingkan dgn tabel N=21

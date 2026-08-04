@@ -1,0 +1,4 @@
+Tahun,Pasangan,Moran_BV_I,p_value,Signifikan_5persen
+2025,PoU vs Produksi Perikanan (X1),-0.0493,0.339,False
+2025,PoU vs Indeks Konektivitas Maritim (X13_IKM),-0.1282,0.165,False
+2025,PoU vs Persentase Penduduk Miskin (X5),0.2574,0.023,True

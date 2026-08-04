@@ -1,0 +1,10 @@
+Fitur,Importance,Importance_Persen,Label
+kab_hist_mean,0.43214914,43.2,Karakteristik Dasar Kabupaten/Kota (rata-rata historis)
+lag_Y_PoU,0.18552041,18.6,PoU Tahun Sebelumnya
+X9_PangsaPangan,0.11701253,11.7,Pangsa Pengeluaran Pangan
+X8_PDRB,0.07308512,7.3,PDRB per Kapita
+X5_PendudukMiskin,0.046933718,4.7,Persentase Penduduk Miskin
+X23_IPM,0.039745715,4.0,Indeks Pembangunan Manusia
+X12_Kepadatan,0.035528995,3.6,Kepadatan Penduduk
+Tahun,0.03551379,3.6,Tahun (tren)
+Indeks_Kapasitas_Pangan,0.034510553,3.5,Indeks Kapasitas Pangan (Produksi Perikanan)
