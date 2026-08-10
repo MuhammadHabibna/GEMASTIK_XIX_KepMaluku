@@ -188,34 +188,80 @@ Volume wacana digital per kabupaten (digunakan sebagai variabel X27 dalam model 
 
 ---
 
-## 10. File Output
+## 10. Daftar Berkas Tabel, Gambar, dan Output (Available Files)
 
-### Data Utama
-- `dataset_final_dengan_topik_sentimen.csv` (~1.9MB) -- dataset lengkap dengan label topik + sentimen
-- `skor_prioritas_topik_final.csv` -- skor prioritas semua 88 topik
-- `topic_info.csv` -- metadata lengkap semua topik BERTopic
-- `topics_over_time.csv` -- evolusi topik per tahun 2021-2026
-- `contoh_representatif_topik.csv` -- contoh dokumen per topik
+Seluruh output eksperimen NLP tersimpan dalam folder `output/` dan `output/rag_documents/`:
 
-### Leksikon dan N-gram
-- `top20_kata.csv`, `top15_bigram.csv`, `top15_trigram.csv`
-- `top15_bigram_positif.csv`, `top15_bigram_negatif.csv`
-- `kata_khas_platform.csv`
-
-### Model dan Diagnostik
-- `riwayat_pelatihan_sentimen.csv` -- training curves model sentimen
-- `eksperimen_perbandingan_backend.csv` -- perbandingan 9 konfigurasi BERTopic
-- `analisis_kesalahan_sentimen.csv` -- error analysis model sentimen
-- `ringkasan_analisis.txt` -- ringkasan eksekutif otomatis
-
-### Visualisasi (35 gambar/file)
-- Fig 01-10: EDA, frekuensi kata, wordcloud, distribusi
-- Fig 11-20: Sentimen per topik, tren temporal, platform
-- Fig 21-25: BERTopic visualisasi interaktif (HTML) + dendogram
-- Fig 26-35: Dashboard eksekutif, radar sentimen, Sankey platform-topik, evolusi topik
-
-### RAG Documents
-- 88 file `topic_X.txt` -- representasi tekstual per topik untuk RAG pipeline
+### 📊 Berkas Tabel & Dataset (`output/`) — 16 Berkas CSV/TXT
+1. `dataset_final_dengan_topik_sentimen.csv` (~1.9 MB) — Dataset utama 2.266 dokumen lengkap dengan label topik BERTopic, probabilitas, sentimen, dan metadata platform.
+2. `skor_prioritas_topik_final.csv` — Skor prioritas kebijakan 88 topik berbasis kombinasi volume, proporsi sentimen negatif, dan tingkat keparahan isu.
+3. `skor_prioritas_topik.csv` — Ranking awal prioritas topik sebelum pembobotan final.
+4. `topic_info.csv` — Metadata lengkap seluruh 88 topik BERTopic (Count, Name, Representation, Key Words).
+5. `topics_over_time.csv` — Matriks evolusi frekuensi dan volume topik per tahun (2021–2026).
+6. `contoh_representatif_topik.csv` — Sampel dokumen paling representatif untuk setiap topik isu.
+7. `top20_kata.csv` — Daftar 20 kata paling sering muncul dalam korpus wacana pangan.
+8. `top15_bigram.csv` — 15 frase 2-kata (bigram) paling dominan.
+9. `top15_trigram.csv` — 15 frase 3-kata (trigram) paling dominan.
+10. `top15_bigram_positif.csv` — 15 bigram paling umum pada dokumen ber-sentimen positif.
+11. `top15_bigram_negatif.csv` — 15 bigram paling umum pada dokumen ber-sentimen negatif (kelaparan, kenaikan harga, dll).
+12. `kata_khas_platform.csv` — Ekstraksi kata-kata unik yang menjadi ciri khas platform (TikTok vs Twitter vs YouTube).
+13. `riwayat_pelatihan_sentimen.csv` — Training/validation loss dan F1-score per epoch fine-tuning IndoBERT.
+14. `eksperimen_perbandingan_backend.csv` — Komparasi performa 9 variasi arsitektur & embedding BERTopic.
+15. `analisis_kesalahan_sentimen.csv` — Error analysis klasifikasi sentimen pada test set (false positive / false negative).
+16. `ringkasan_analisis.txt` — Ringkasan statistik eksekutif otomatis hasil ekstraksi NLP.
 
 ---
-*Dihasilkan dari pipeline NLP tim GEMASTIK 2026 (run: 2026-07-31 15:02:36)*
+
+### 🖼️ Berkas Visualisasi (`output/`) — 36 Berkas PNG & HTML
+
+#### a. EDA & Distribusi Awal (Fig 01–07)
+1. `01_distribusi_platform_raw.png` — Chart distribusi jumlah dokumen mentah per platform.
+2. `02_distribusi_tahun_platform_raw.png` — Breakdown dokumen per platform lintas tahun 2021–2026.
+3. `03_panjang_teks_raw.png` — Histogram sebaran panjang dokumen (karakter/kata).
+4. `04_missing_value_raw.png` — Audit missing values pada atribut metadata dokumen.
+5. `05_relevansi_wilayah_informasional.png` — Sebaran dokumen yang lolos filter relevansi geografi Kepulauan Maluku.
+6. `06_distribusi_platform_setelah_cap.png` — Distribusi dokumen final setelah balancing/capping.
+7. `07_heatmap_bulan_tahun.png` — Heatmap intensitas postingan per bulan dan tahun.
+
+#### b. Analisis Kata & Sentimen (Fig 08–19)
+8. `08_wordcloud_keseluruhan.png` — Wordcloud frekuensi kata dari seluruh korpus 2.266 dokumen.
+9. `09_top20_kata.png` — Bar plot 20 kata teratas dalam korpus.
+10. `10_top15_bigram.png` — Bar plot 15 bigram teratas.
+11. `11_top15_trigram.png` — Bar plot 15 trigram teratas.
+12. `12_jumlah_token_platform.png` — Perbandingan rata-rata token per postingan antar platform.
+13. `13_kesepakatan_voting.png` — Tingkat kesepakatan pseudo-labeling antar model.
+14. `14_kurva_pelatihan_sentimen.png` — Learning curves fine-tuning model IndoBERT sentimen.
+15. `15_confusion_matrix_test_set.png` — Confusion matrix evaluasi klasifikasi 3 kelas sentimen (Positif, Netral, Negatif).
+16. `15b_perbandingan_baseline_finetune.png` — Bar chart perbandingan F1-score baseline Lexicon vs IndoBERT Fine-tuned.
+17. `16_proporsi_sentimen_final.png` — Pie chart proporsi akhir sentimen (37.4% Negatif).
+18. `17_sentimen_per_tahun.png` — Tren pergeseran proporsi sentimen tahun 2021–2026.
+19. `18_sentimen_per_platform.png` — Komparasi distribusi sentimen di TikTok vs Twitter vs YouTube.
+20. `19_perbandingan_backend_embedding.png` — Plot evaluasi nilai coherence & diversity 9 backend embedding.
+
+#### c. Pemodelan Topik BERTopic (Fig 20–35 & HTML Interaktif)
+21. `20_top_topik_jumlah_dokumen.png` — Bar chart 10 topik terbesar berdasarkan jumlah dokumen.
+22. `21_barchart_topik.html` — Visualisasi interaktif BERTopic bar chart bobot c-TF-IDF kata per topik.
+23. `22_intertopic_distance_map.html` — Peta interaktif MDS Intertopic Distance Map 88 topik.
+24. `23_hierarchy_topik.html` — Dendrogram hirarki pengelompokan topik BERTopic.
+25. `24_topik_seiring_waktu.html` — Chart interaktif evolusi kemunculan topik seiring waktu.
+26. `25_bigram_per_sentimen.png` — Comparison bar chart bigram khusus sentimen positif vs negatif.
+27. `26_wordcloud_kontras_sentimen.png` — Wordcloud kontras kata positif vs negatif.
+28. `27_heatmap_topik_sentimen.png` — Heatmap silang antara 88 topik dengan 3 kelas sentimen.
+29. `28_kuadran_topik_sentimen.png` — Quadrant plot volume topik vs persentase sentimen negatif.
+30. `29_treemap_topik.html` — Treemap interaktif proporsi ukuran topik.
+31. `30_radar_sentimen_topik.png` — Radar chart emosi/sentimen pada topik-topik kunci.
+32. `31_sankey_platform_topik_sentimen.html` — Diagram Sankey interaktif alur hubungan Platform → Topik → Sentimen.
+33. `32_evolusi_topik_tahun.png` — Heatmap evolusi topik utama per tahun.
+34. `33_skor_prioritas_topik.png` — Ranking visual 15 topik dengan skor prioritas tertinggi.
+35. `34_kata_khas_platform.png` — Visualisasi kata kunci khas per platform.
+36. `35_dashboard_eksekutif.png` — Executive summary dashboard infografis rangkuman hasil NLP.
+
+---
+
+### 📄 Berkas Dokumentasi RAG (`output/rag_documents/`) — 90 Berkas
+- `ringkasan_umum_rag.json` — Metadata dan ringkasan eksekutif korpus teks untuk RAG pipeline.
+- `semua_topik_rag.jsonl` — File JSON Lines berisi 88 ringkasan topik terstruktur siap di-ingest LLM/RAG.
+- `topic_0.txt` s.d. `topic_87.txt` — 88 berkas deskripsi naratif individual untuk masing-masing topik isu (harga beras, kelaparan adat, keracunan MBG, dll).
+
+---
+*Dihasilkan dari pipeline NLP tim GEMASTIK XIX / 2026 (run: 2026-07-31 15:02:36)*

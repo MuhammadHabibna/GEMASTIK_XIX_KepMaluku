@@ -444,3 +444,103 @@ Data volume wacana digital per kabupaten (dari pipeline NLP -- lihat folder Anal
 ---
 *Dokumen ini dihasilkan otomatis dari `GWR_MGWR_Determinan_Lokal_PoU_Maluku.ipynb`*
 *Semua angka berasal langsung dari eksekusi notebook dan eksplorasi tabel output.*
+
+
+## 20. Daftar Berkas Tabel dan Gambar (Available Files)
+
+Seluruh berkas output tersimpan terstruktur dalam folder 	ables/ dan igures/:
+
+### 📊 Tabel Hasil Analisis (	ables/) — 25 Berkas CSV
+
+#### a. Data & Seleksi Fitur
+1. cross_section_2025_dengan_flag_imputasi.csv — Dataset cross-section 2025 lengkap dengan kolom flag penanda imputasi.
+2. dekomposisi_varians_fitur_panel.csv — Hasil dekomposisi varians fitur panel (within vs between kabupaten/kota).
+3. itur_final_vif.csv — Nilai Variance Inflation Factor (VIF) untuk 10-11 fitur prediktor awal.
+4. itur_parsimoni_vif.csv — Evaluasi VIF untuk 3 fitur parsimoni (X8 PDRB, X9 Pangsa Pangan, X27 Wacana Digital).
+5. province_fixed_effects_X4_X18.csv — Evaluasi indikator level-provinsi (X4 NTP, X18 TK Pertanian) sebagai kontrol.
+
+#### b. Regresi Global (OLS, SAR, SEM)
+6. hasil_ols.csv — Koefisien regresi, std error, t-stat, p-value, R², AICc, dan diagnostik OLS global (N=21).
+7. hasil_sar_sem.csv — Parameter estimasi dan statistik uji model Spatial Autoregressive (SAR) dan Spatial Error Model (SEM).
+8. 	abel_model_crosssection_N21.csv — Tabel ringkasan perbandingan statistik model cross-section N=21 untuk laporan.
+
+#### c. Regresi Spasial Lokal (GWR & GTWR)
+9. gwr_diagnostik_stabilitas.csv — Diagnostik stabilitas multikolinearitas lokal GWR 11-fitur (Condition Number & VIF).
+10. gwr_koefisien_lokal_per_kabkota.csv — Koefisien lokal GWR 11-fitur cross-section 2025 per kabupaten/kota.
+11. gwr_parsimoni_diagnostik_stabilitas.csv — Evaluasi stabilitas Condition Number GWR Parsimoni 3-fitur (0% CN > 30).
+12. gwr_parsimoni_koefisien_lokal_per_kabkota.csv — Koefisien lokal GWR Parsimoni (X8, X9, X27) per kabupaten/kota tahun 2025.
+13. gtwr_bandwidth_selection.csv — Rekam jejak pencarian bandwidth spasiotemporal optimal untuk GTWR.
+14. gtwr_diagnostik_stabilitas.csv — Diagnostik stabilitas Condition Number dan VIF lokal model GTWR panel.
+15. gtwr_jejak_eliminasi.csv — Catatan langkah demi langkah prosedur backward elimination GTWR.
+16. gtwr_koefisien_lokal_kabkota_tahun.csv — Koefisien lokal GTWR awal sebelum eliminasi fitur.
+17. gtwr_final_12b_koefisien_lokal_kabkota_tahun.csv — **Tabel utama koefisien lokal GTWR (Model 12b)** untuk 21 kab/kota x 5-6 tahun.
+18. 	abel_model_panel_GTWR.csv — Tabel ringkasan evaluasi performa model panel GTWR (N=105/126) untuk laporan.
+
+#### d. Perbandingan, Robustness & Interpretasi
+19. perbandingan_semua_model.csv — Summary perbandingan komprehensif seluruh model (OLS, SAR, SEM, GWR, GTWR).
+20. perbandingan_gwr_vs_gtwr_2025.csv — Komparasi koefisien dan fit model GWR cross-section vs GTWR panel khusus tahun 2025.
+21. gtwr_perbandingan_2020_2025_vs_2021_2025.csv — Evaluasi dampak penanganan patahan data 2020 terhadap RMSE GTWR.
+22. 
+obustness_variant_A_vs_B.csv — Pengujian ketahanan spesifikasi model Variant A (X9 Pangsa Pangan) vs Variant B (X10 Pengeluaran Pangan).
+23. x27_volume_wacana_per_kabkota.csv — Agregasi volume wacana digital (X27) dari NLP per kabupaten/kota.
+24. krisis_senyap_kandidat.csv — Daftar 7 kabupaten/kota kandidat Krisis Senyap (PoU tinggi, wacana digital minim).
+25. interpretasi_faktor_lokal_per_kabkota.csv — Mapping 3 faktor determinan utama PoU lokal per kabupaten/kota.
+
+---
+
+### 🖼️ Gambar Visualisasi (igures/) — 39 Berkas PNG
+
+#### a. Diagnostik & Model Global (Fig 18–23)
+1. 18_missing_2025_crosssection.png — Heatmap pengecekan missing data pada dataset cross-section 2025.
+2. 19_vif_final_features.png — Bar chart nilai VIF 10-11 fitur prediktor final.
+3. 20_korelasi_fitur_final.png — Heatmap korelasi antar-prediktor final.
+4. 21_ols_diagnostic.png — Plot diagnostik asumsi residual OLS (normality, homoscedasticity).
+5. 22_moran_residual_ols.png — Moran scatterplot dan pengujian autokorelasi spasial pada residual OLS.
+6. 23_perbandingan_aic_model.png — Diagram perbandingan AICc antar model global (OLS vs SAR vs SEM).
+
+#### b. GWR Cross-Section 2025 & Parsimoni (Fig 24–31)
+7. 24_gwr_bandwidth_selection.png — Kurva pencarian bandwidth optimal GWR cross-section.
+8. 25_gwr_local_r2_choropleth.png — Peta choropleth sebaran R² lokal GWR 11-fitur.
+9. 26_gwr_koefisien_lokal_X8_PDRB_per_Kapita_ADHB.png — Peta koefisien lokal GWR X8 (PDRB per kapita).
+10. 27_gwr_koefisien_lokal_X27_Volume_Wacana_Digital.png — Peta koefisien lokal GWR X27 (Volume Wacana Digital).
+11. 28_gwr_parsimoni_local_r2_choropleth.png — Peta choropleth R² lokal GWR Parsimoni 3-fitur.
+12. 29_gwr_parsimoni_koefisien_lokal_X8_PDRB_per_Kapita_ADHB.png — Peta koefisien lokal GWR Parsimoni X8 (PDRB).
+13. 30_gwr_parsimoni_koefisien_lokal_X9_Pangsa_Pengeluaran_Pangan.png — Peta koefisien lokal GWR Parsimoni X9 (Pangsa Pangan).
+14. 31_gwr_parsimoni_koefisien_lokal_X27_Volume_Wacana_Digital.png — Peta koefisien lokal GWR Parsimoni X27 (Wacana Digital).
+
+#### c. GTWR Panel & Eliminasi (Fig 32–37)
+15. 32_gtwr_bandwidth_selection.png — Plot pencarian bandwidth spasiotemporal GTWR.
+16. 33_gtwr_local_r2_2025_choropleth.png — Peta R² lokal GTWR panel pada slice tahun 2025.
+17. 34_gtwr_koefisien_lokal_2025_X8_PDRB_per_Kapita_ADHB.png — Peta koefisien lokal GTWR X8 tahun 2025.
+18. 35_gtwr_koefisien_lokal_2025_X27_Volume_Wacana_Digital.png — Peta koefisien lokal GTWR X27 tahun 2025.
+19. 36_gtwr_jejak_eliminasi.png — Visualisasi penurunan VIF dan Condition Number pada tiap tahap backward elimination.
+20. 37_gtwr_final_12b_local_r2_2025_choropleth.png — Peta R² lokal final GTWR Model 12b tahun 2025.
+
+#### d. Peta Koefisien Lokal GTWR 12b per Indikator (Fig 38–47)
+21. 38_gtwr_final_12b_koefisien_lokal_2025_X1_Produksi_Perikanan_Tangkap_Laut.png — Peta koefisien lokal X1 (Perikanan).
+22. 39_gtwr_final_12b_koefisien_lokal_2025_X5_Persentase_Penduduk_Miskin.png — Peta koefisien lokal X5 (Kemiskinan).
+23. 40_gtwr_final_12b_koefisien_lokal_2025_X8_PDRB_per_Kapita_ADHB.png — Peta koefisien lokal X8 (PDRB per Kapita).
+24. 41_gtwr_final_12b_koefisien_lokal_2025_X12_Kepadatan_Penduduk.png — Peta koefisien lokal X12 (Kepadatan Penduduk).
+25. 42_gtwr_final_12b_koefisien_lokal_2025_X13a_Jumlah_Pelabuhan_Utama.png — Peta koefisien lokal X13a (Jumlah Pelabuhan).
+26. 43_gtwr_final_12b_koefisien_lokal_2025_X13b_Kunjungan_Kapal_Tahunan.png — Peta koefisien lokal X13b (Kunjungan Kapal).
+27. 44_gtwr_final_12b_koefisien_lokal_2025_X13c_Jarak_ke_Pelabuhan_Induk.png — Peta koefisien lokal X13c (Jarak Pelabuhan).
+28. 45_gtwr_final_12b_koefisien_lokal_2025_X17_TPT.png — Peta koefisien lokal X17 (Pengangguran TPT).
+29. 46_gtwr_final_12b_koefisien_lokal_2025_X27_Volume_Wacana_Digital.png — Peta koefisien lokal X27 (Wacana Digital).
+30. 47_gtwr_final_12b_koefisien_lokal_2025_X9_Pangsa_Pengeluaran_Pangan.png — Peta koefisien lokal X9 (Pangsa Pangan).
+
+#### e. Stabilitas & Tren Temporal GTWR (Fig 48–49 & Prefix _)
+31. 48_gtwr_perbandingan_12b_vs_12d.png — Diagram komparasi performa GTWR Model 12b vs 12d.
+32. 49_gtwr_rmse_2020_vs_2021_2025.png — Bar plot perbandingan RMSE panel 2020–2025 vs 2021–2025.
+33. _gtwr_final_12b_local_condition_number.png — Peta distribusional Condition Number lokal GTWR Model 12b.
+34. _gtwr_final_12b_tren_temporal_x27.png — Line chart tren perubahan koefisien lokal X27 dari 2020 s.d. 2025.
+35. _gtwr_tren_temporal_x27_contoh.png — Grafik sampel pergerakan koefisien X27 pada kabupaten pilihan.
+36. _gwr_local_condition_number.png — Map Condition Number lokal GWR 11-fitur.
+37. _gwr_parsimoni_local_condition_number.png — Map Condition Number lokal GWR Parsimoni.
+38. _x27_koefisien_lokal.png — Scatter plot sebaran koefisien lokal X27.
+39. _x27_krisis_senyap_scatter.png — Quadrant scatterplot PoU vs Volume Wacana Digital (identifikasi 7 Krisis Senyap).
+
+---
+---
+*Dokumen ini dihasilkan otomatis dari 
+egresi_lokal_gwr_gtwr_pou_maluku.ipynb*
+*Semua angka berasal langsung dari eksekusi notebook dan eksplorasi tabel output.*

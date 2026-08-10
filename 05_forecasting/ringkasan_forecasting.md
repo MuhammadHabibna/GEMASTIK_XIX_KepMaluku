@@ -37,3 +37,34 @@ Proyek GEMASTIK XIX/2026 (Divisi Data Mining) meramalkan Prevalensi Ketidakcukup
 - Forecast berbasis 6 titik data historis per unit; sebaiknya diperbarui tiap kali data tahun baru tersedia, tidak dipakai untuk horizon lebih dari 3 tahun tanpa evaluasi ulang.
 - Fitur eksogen 2026-2028 memakai asumsi ceteris paribus (nilai 2025 ditahan konstan); forecast akan lebih akurat jika data eksogen tahun berjalan tersedia dan dimasukkan ulang.
 - Analisis Paradoks/Underdog memakai satu proksi kapasitas (produksi perikanan); R-squared regresi pooled rendah sehingga interpretasi kausal harus tetap berhati-hati.
+
+## Daftar Berkas Tabel dan Gambar (Available Files)
+
+Seluruh berkas output eksperimen forecasting tersimpan dalam folder `tables/` dan `figures/`:
+
+### 📊 Berkas Tabel (`tables/`) — 8 Berkas CSV
+1. `forecast_pou_2026_2028.csv` — **Hasil proyeksi utama nilai PoU (%)** 21 kabupaten/kota Kepulauan Maluku untuk tahun 2026, 2027, dan 2028.
+2. `dataset_bersih_forecasting.csv` — Dataset panel 21 kab/kota × 6 tahun (2020–2025) setelah pembersihan & feature engineering siap latih.
+3. `feature_importance.csv` — Bobot kontribusi kontributif indikator terhadap prediksi XGBoost (Karakteristik dasar 43.2%, Lag PoU 18.6%, Pangsa Pangan 11.7%, PDRB 7.3%, dll).
+4. `paradoks_underdog_ranking.csv` — Hasil pemetaan dan ranking 21 kabupaten/kota dalam kategori **Paradoks Produksi** vs **Underdog Ketahanan Pangan**.
+5. `perbandingan_model.csv` — Hasil evaluasi MAE backtesting walk-forward (2024–2025) perbandingan model XGBoost Panel vs ElasticNet.
+6. `perbandingan_peringkat_2025_2028.csv` — Tabel matriks pergeseran posisi ranking kerawanan pangan kabupaten/kota dari tahun 2025 ke proyeksi 2028.
+7. `perubahan_2025_2028.csv` — Perhitungan delta perbaikan/pemburukan poin persentase PoU (2025 vs 2028) per kabupaten/kota.
+8. `statistik_pertumbuhan_volatilitas.csv` — Metrik deskriptif rata-rata, CAGR, standar deviasi, dan volatilitas PoU historis.
+
+---
+
+### 🖼️ Berkas Visualisasi (`figures/`) — 10 Berkas PNG
+1. `01_historis_semua_kabkota.png` — Line chart tren pergerakan PoU historis 21 kabupaten/kota (2020–2025).
+2. `03_perbandingan_model.png` — Bar chart evaluasi performa MAE backtesting model XGBoost vs ElasticNet.
+3. `04_feature_importance.png` — Horizontal bar chart persentase kontribusi kepentingan fitur model XGBoost.
+4. `05_forecast_small_multiples.png` — Grid panel 21 sub-chart tren PoU historis dan proyeksi 2026–2028 per kabupaten/kota.
+5. `06_scatter_paradoks_underdog.png` — Quadrant scatterplot residual PoU vs Indeks Kapasitas Pangan (identifikasi Paradoks vs Underdog).
+6. `07_visualisasi_utama_4unit.png` — Chart visualisasi perbandingan mendalam pada 4 kabupaten/kota sampel utama.
+7. `08_perubahan_2025_2028.png` — Bar chart proyeksi delta perubahan persentase PoU (2025 vs 2028).
+8. `09_forecast_provinsi.png` — Line plot proyeksi agregat tren PoU Provinsi Maluku vs Maluku Utara hingga 2028.
+9. `10_slope_chart_peringkat.png` — Slope chart pergeseran peringkat kerawanan pangan dari 2025 ke 2028.
+10. `11_peta_forecast_2028.png` — Peta tematik choropleth proyeksi tingkat kerawanan pangan (PoU %) tahun 2028.
+
+---
+*Dihasilkan dari pipeline forecasting XGBoost tim GEMASTIK XIX / 2026*
