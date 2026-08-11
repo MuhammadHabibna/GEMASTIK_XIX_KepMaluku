@@ -538,6 +538,7 @@ obustness_variant_A_vs_B.csv — Pengujian ketahanan spesifikasi model Variant A
 37. _gwr_parsimoni_local_condition_number.png — Map Condition Number lokal GWR Parsimoni.
 38. _x27_koefisien_lokal.png — Scatter plot sebaran koefisien lokal X27.
 39. _x27_krisis_senyap_scatter.png — Quadrant scatterplot PoU vs Volume Wacana Digital (identifikasi 7 Krisis Senyap).
+40. 50_peta_faktor_determinan_dominan_gtwr12b.png — **PETA UTAMA (GAMBAR 3):** Peta choropleth sintetis pengelompokan 21 kabupaten/kota berdasarkan kombinasi faktor determinan dominan GTWR-12b (Isolasi Maritim Fisik vs Konektivitas Logistik Kapal vs Dispersi Demografi).
 
 ---
 ---
