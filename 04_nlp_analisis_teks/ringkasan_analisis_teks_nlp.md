@@ -176,7 +176,56 @@ Volume wacana digital per kabupaten (digunakan sebagai variabel X27 dalam model 
 
 ---
 
-## 9. Temuan Utama
+## 9. Fakta Unik NLP & Korelasi Lintas Metode (Cross-Method Insights)
+
+Sintesis hasil NLP teks (sentimen & BERTopic) dengan 4 metode lainnya (Autokorelasi LISA, Clustering K-Means, Regresi GTWR/SEM, dan Forecasting XGBoost) mengungkapkan beberapa **fakta unik dan temuan spesifik** yang sangat penting bagi pengambil kebijakan:
+
+### 1. 🚨 Peta Sentimen Negatif Kab/Kota & Korelasinya dengan Model Spasial & Forecasting
+
+| Kabupaten / Kota | Total Dokumen | % Negatif | % Neutral | % Positive | Korelasi & Temuan Lintas Metode |
+|------------------|---------------|-----------|-----------|------------|----------------------------------|
+| **Kepulauan Tanimbar** | 73 | **65.75%** | 19.18% | 15.07% | **#1 Negatif Terbanyak.** Wilayah maritim terluar selatan; gejolak harga pangan & kelangkaan pasokan kapal ($X_{13b}$ di SEM) memicu amarah warga tertinggi di media. |
+| **Seram Bagian Barat** | 56 | **58.93%** | 26.79% | 14.29% | **#2 Negatif Terbanyak.** 100% konsisten dengan posisi Seram Bagian Barat di **Kuadran Paradoks Clustering K-Means** dan proyeksi **rebound PoU naik (2025→2028)** di XGBoost. |
+| **Buru Selatan** | 107 | **56.07%** | 26.17% | 17.76% | **#3 Negatif Terbanyak.** Berkolerasi langsung dengan **volatilitas PoU tertinggi se-Maluku (StdDev = 7.26)** dan residual paradoks produksi (+6.22). |
+| **Buru** | 127 | **55.91%** | 13.39% | 30.71% | **#4 Negatif Terbanyak.** Masuk Kuadran Paradoks K-Means; keluhan tinggi atas harga beras lokal meskipun kabupaten ini adalah lumbung padi. |
+| **Kepulauan Sula** | 78 | **53.85%** | 23.08% | 23.08% | **#5 Negatif Terbanyak.** Wilayah PoU tertinggi (#1); terverifikasi sebagai *High-High Hotspot* LISA dan terisolasi fisik (GTWR $X_{13c} = +2.75$). |
+
+---
+
+### 2. 🤫 Fenomena "Krisis Senyap Super" (Under-Reporting Digital)
+
+- **Pulau Taliabu — Sentimen Negatif Terendah (5.00%) vs PoU Sangat Tinggi (34.19%–49.84%):**
+  - Dari 2.266 dokumen, Pulau Taliabu hanya terwakili oleh **20 dokumen** dengan persentase **sentimen negatif hanya 5.00%** (didominasi narasi doa & harapan lokal).
+  - *Integrasi Spasial:* Padahal secara geografis, Taliabu terbukti masuk *High-High Hotspot* LISA bersama Kepulauan Sula dan memiliki koefisien GTWR Jarak ke Pelabuhan Induk terbesar (**+3.05**).
+  - *Kesimpulan:* Hal ini membuktikan keterisolasian saluran aspirasi digital warga (*Krisis Senyap Super*) di pulau terluar Maluku Utara, sehingga tingginya kerawanan pangan tidak terpancar di media digital arus utama.
+
+---
+
+### 3. 📱 Dikotomi Saluran Media (YouTube vs TikTok vs Twitter/X)
+
+| Platform | Vol. Dokumen | % Negatif | % Neutral | % Positive | Karakteristik Wacana Publik |
+|----------|--------------|-----------|-----------|------------|-----------------------------|
+| **YouTube** | 520 | **63.08%** | 14.42% | 22.50% | **Wadah Luapan Emosi & Jeritan Warga.** Komentar video berita daerah dipenuhi kecaman atas kenaikan harga beras, isu kelaparan pedalaman, dan terhentinya kapal perintis. |
+| **TikTok** | 1.068 | **42.70%** | 32.30% | 25.00% | **Arena Kesadaran Sosial & Viral.** Didominasi reaksi anak muda/ibu pasar terkait ulasan harga kebutuhan pokok lokal dan Program Makan Bergizi Gratis (MBG). |
+| **Twitter / X** | 678 | **9.44%** | **86.73%** | 3.83% | **Kanal Berita Resmi & Institusional.** Dominan rilis pers dinas pemerintah, statistik inflasi formal, dan bot berita, sehingga steril dari emosi negatif warga. |
+
+---
+
+### 4. 📌 Topik Kritis Berdasarkan Prioritas Kebijakan
+
+1. **Topik 0 — Kenaikan Harga Beras dan Pangan:**
+   - Skor Prioritas = **0.7235** (Teratas #1 di seluruh 88 topik).
+   - Volume 81 dokumen dengan **55.56% sentimen negatif**. Isu ini menjadi pemicu utama kegelisahan publik se-Kepulauan Maluku.
+2. **Topik 10 — Kelaparan dan Kehidupan Masyarakat Adat:**
+   - Proporsi Sentimen Negatif mencapai **86.49%** (tertinggi di antara topik utama) dengan Skor Prioritas **0.5997** (#3).
+   - Menyoroti penderitaan masyarakat adat di pedalaman pulau-pulau besar (Halmahera & Seram) yang terisolasi dari akses logistik pangan dasar.
+3. **Topik 51 & 54 — Pemborosan Makanan & Kritik Penanganan MBG:**
+   - Proporsi Sentimen Negatif ekstrem mencapai **> 94.0%**.
+   - Publik mengecam kelemahan rantai dingin (*cold chain*) dan keterlambatan distribusi MBG di pulau-pulau kecil yang menyebabkan makanan tiba dalam kondisi basi/rusak.
+
+---
+
+## 10. Temuan Utama
 
 1. **Kenaikan harga beras** adalah isu dengan volume terbesar DAN skor prioritas tertinggi (0.72) -- 55.6% negatif
 2. **Program MBG mendominasi wacana** (topik 1, 4, 6, 7, 8, 9 dalam top 10) dengan sentimen campuran; isu keracunan makanan basi sangat viral di 3-gram
@@ -188,7 +237,7 @@ Volume wacana digital per kabupaten (digunakan sebagai variabel X27 dalam model 
 
 ---
 
-## 10. Daftar Berkas Tabel, Gambar, dan Output (Available Files)
+## 11. Daftar Berkas Tabel, Gambar, dan Output (Available Files)
 
 Seluruh output eksperimen NLP tersimpan dalam folder `output/` dan `output/rag_documents/`:
 
