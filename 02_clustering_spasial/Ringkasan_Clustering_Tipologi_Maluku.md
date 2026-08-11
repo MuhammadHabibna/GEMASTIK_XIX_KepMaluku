@@ -114,4 +114,32 @@ Seluruh berkas terkait eksperimen clustering tersimpan lengkap di folder `02_clu
 - `indikator_terpakai.csv` — Daftar 13 indikator socio-economic & maritim yang lolos seleksi VIF.
 
 ---
+
+## 8. Implikasi Kebijakan per Tipologi
+
+- **C0 (Rawan Konsumsi):** Penguatan rantai pasok fisik, cadangan pangan daerah, dan stabilisasi harga logistik (bukan bantuan tunai).
+- **C1 (Miskin Terisolasi):** Jalur ganda: penambahan trayek/frekuensi kapal perintis + penguatan ekonomi rumah tangga.
+- **C2 (Sentra Urban):** Pertahankan fungsi hub regional dan optimalkan sistem redistribusi pangan ke pulau sekitar.
+- **C3 (Enklave Industri):** Kewajiban integrasi pertumbuhan industri tambang dengan penyediaan infrastruktur dasar & layanan pangan masyarakat lokal.
+
+---
+
+## 9. Wilayah Prioritas — Top 5 Kab/Kota dari Perspektif Clustering
+
+Identifikasi berdasarkan: (a) keanggotaan tipologi, (b) nilai PoU rata-rata, dan (c) anomali/paradoks yang diidentifikasi dari profil multi-variabel.
+
+| Rank | Kab/Kota | Kluster | PoU 2025 | Kapasitas Produksi | Peran & Relevansi Metode Lain |
+|------|----------|---------|----------|--------------------|-------------------------------|
+| 1 | **Kepulauan Sula** | C0 Paradoks | 37.36% | Sedang | Paradoks: PoU tertinggi tapi kemiskinan rendah (6.5%) → masalah distribusi logistik; LISA HH Hotspot; Forecasting #1 terburuk stabil |
+| 2 | **Pulau Taliabu** | C0 Paradoks | 34.19% | Sedang | Produksi lokal ada, tapi pangan tidak sampai ke masyarakat; GTWR isolasi terberat; NLP hanya 20 dok (Krisis Senyap Super) |
+| 3 | **Halmahera Tengah** | C3 Enklave | 19.03% | Tertinggi (PDRB 91.5 jt) | Paradoks enklave tambang: PDRB 3.3× rata-rata, PoU malah mulai naik di 2028; air minum terendah |
+| 4 | **Seram Bagian Barat** | C0/C1 | 32.94% | Tertinggi ke-3 (0.742) | Paradoks produksi-distribusi: kapasitas produksi besar, PoU tetap tinggi & memburuk 2025→2028 |
+| 5 | **Maluku Tengah** | C1 Terisolasi | 30.26% | Tertinggi (1.00, dinorm.) | Kapasitas produksi tertinggi tetapi konektivitas kapal lemah; Forecasting memproyeksikan lonjakan +7 peringkat pada 2028 |
+
+**Catatan interpretasi:**
+- Kluster C0 menghasilkan dua paradoks terkuat: wilayah dengan kemiskinan *rendah* tetapi PoU *tinggi*, membuktikan bahwa hambatan ketahanan pangan Maluku Utara bukan soal kemampuan beli melainkan soal **pasokan fisik yang tidak sampai**.
+- Kluster C3 (Halmahera Tengah & Halmahera Timur) adalah paradoks enklave industri: pertumbuhan ekonomi tidak menetes ke pangan dan air minum masyarakat lokal.
+- Kluster C2 (Kota Ternate & Kota Tidore Kepulauan) adalah *benchmark* yang harus dipertahankan dan dijadikan hub redistribusi pangan ke pulau-pulau sekitar.
+
+---
 *Dihasilkan dari analisis clustering oleh tim GEMASTIK XIX / 2026*

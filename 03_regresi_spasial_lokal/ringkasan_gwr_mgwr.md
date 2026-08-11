@@ -542,6 +542,24 @@ obustness_variant_A_vs_B.csv — Pengujian ketahanan spesifikasi model Variant A
 
 ---
 ---
-*Dokumen ini dihasilkan otomatis dari 
-egresi_lokal_gwr_gtwr_pou_maluku.ipynb*
+
+## Wilayah Prioritas — Top 5 Kab/Kota dari Perspektif Regresi Lokal (GWR/GTWR)
+
+Identifikasi berdasarkan: (a) interpretasi faktor lokal dominan GTWR-12b (2025), (b) nilai koefisien lokal untuk faktor kunci, dan (c) status krisis senyap (X27).
+
+| Rank | Kab/Kota | PoU 2025 | Faktor Dominan (GTWR 2025) | Koefisien Kritis | Relevansi Metode Lain |
+|------|----------|----------|-----------------------------|------------------|----------------------|
+| 1 | **Pulau Taliabu** | 34.19% | X13c Jarak Pelabuhan | **+3.045** (tertinggi se-Maluku) | LISA HH Hotspot; Clustering C0; NLP Krisis Senyap Super (20 dok) |
+| 2 | **Kepulauan Sula** | 37.36% | X13c + X8 PDRB | +2.75 / −2.32 | LISA HH Hotspot persisten; Clustering C0 paradoks; Forecasting #1 terburuk stabil |
+| 3 | **Seram Bagian Barat** | 32.94% | X13b Kunjungan Kapal + X1 Perikanan | −2.55 / +1.64 (anomali) | Paradoks produksi: X1 positif → produksi tinggi PoU juga tinggi; NLP #2 sentimen negatif |
+| 4 | **Maluku Tengah** | 30.26% | X13b + X27 Wacana | −1.48 / −0.44 | Konektivitas kapal & wacana digital terlemah di Maluku; Forecasting lompat +7 peringkat 2025→2028 |
+| 5 | **Halmahera Tengah** | 19.03% | X8 PDRB (pelindung parsial) | −2.12 | Clustering C3 Enklave; PDRB tinggi hanya melindungi secara parsial; PoU mulai naik di Forecasting |
+
+**Catatan interpretasi:**
+- Pulau Taliabu memiliki koefisien Jarak ke Pelabuhan Induk (X13c = +3.045) tertinggi se-Maluku, yang berarti **setiap unit peningkatan jarak pelabuhan mendorong PoU naik paling kuat** di wilayah ini.
+- Seram Bagian Barat menunjukkan anomali unik: koefisien X1 (Produksi Perikanan) bernilai **positif** (+1.64) — artinya produksi perikanan yang lebih tinggi justru berkorelasi dengan PoU lebih tinggi. Ini membuktikan *bottleneck* pada rantai distribusi, bukan pada kapasitas produksi.
+- Tujuh wilayah **"Krisis Senyap"** (PoU tinggi + X27 mendekati nol): Kepulauan Sula, Pulau Taliabu, Buru Selatan, Halmahera Barat, Seram Bagian Timur, Kepulauan Aru, Pulau Morotai. Di antara ini, Kepulauan Sula dan Pulau Taliabu paling kritis karena dikonfirmasi oleh 4–5 metode sekaligus.
+
+---
+*Dokumen ini dihasilkan otomatis dari regresi_lokal_gwr_gtwr_pou_maluku.ipynb*
 *Semua angka berasal langsung dari eksekusi notebook dan eksplorasi tabel output.*

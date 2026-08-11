@@ -181,4 +181,23 @@ Semua berkas output tersimpan terstruktur dalam folder `tables/` dan `figures/`:
 22. `17_choropleth_time_series.png` — Seri peta choropleth PoU 21 kabupaten/kota untuk seluruh 6 tahun panel.
 
 ---
+
+## 10. Wilayah Prioritas — Top 5 Kab/Kota dari Perspektif Autokorelasi Spasial
+
+Identifikasi berikut berdasarkan kombinasi: (a) peringkat PoU 2025, (b) persistensi klaster LISA, dan (c) persistensi Getis-Ord Gi*.
+
+| Rank | Kab/Kota | PoU 2025 | Klaster LISA | Getis-Ord | Relevansi Metode Lain |
+|------|----------|----------|--------------|-----------|-----------------------|
+| 1 | **Kepulauan Sula** | 37.36% (#1) | High-High persisten (2× / 6 tahun) | Hotspot 2× / 6 tahun | Clustering C0 Paradoks; GTWR isolasi maritim berat; Forecasting #1 terburuk tetap 2028 |
+| 2 | **Pulau Taliabu** | 34.19% (#5) | High-High persisten (2× / 6 tahun) | Hotspot 2× / 6 tahun | GTWR jarak pelabuhan tertinggi (+3.04); NLP hanya 20 dok (Krisis Senyap Super) |
+| 3 | **Halmahera Selatan** | 26.77% (#17) | Low-Low paling stabil (6× / 6 tahun) | Coldspot 6× / 6 tahun | *Wilayah terbaik secara spasial* — konsisten sebagai zona PoU rendah di kawasan |
+| 4 | **Halmahera Tengah** | 19.03% (#21) | Low-Low (4× / 6 tahun) | Coldspot 4× / 6 tahun | Clustering C3 Enklave Industri; PDRB tertinggi tetapi PoU mulai naik di Forecasting 2028 |
+| 5 | **Seram Bagian Barat** | 32.94% (#8) | Tidak signifikan | Tidak signifikan | Kapasitas produksi pangan tertinggi ke-3 tetapi PoU tinggi → paradoks distribusi; Forecasting memburuk |
+
+**Catatan interpretasi:**
+- Kepulauan Sula dan Pulau Taliabu adalah satu-satunya dua wilayah yang *konsisten* muncul sebagai High-High Hotspot LISA *dan* Hotspot Getis-Ord secara berulang. Ini menunjukkan klasterisasi kerawanan pangan yang saling menguatkan dengan tetangga terdekat.
+- Halmahera Selatan adalah *benchmark* keberhasilan: PoU rendah, konsisten, dan secara spasial menjadi "penarik turun" PoU wilayah sekitarnya.
+- Absennya Maluku Tengah dari daftar LISA/Getis-Ord yang signifikan *tidak berarti aman* — ia diidentifikasi oleh Forecasting sebagai wilayah yang akan melonjak paling tajam (peringkat naik 7 posisi pada 2028).
+
+---
 *Dihasilkan dari analisis dengan PySAL oleh tim GEMASTIK XIX / 2026*
