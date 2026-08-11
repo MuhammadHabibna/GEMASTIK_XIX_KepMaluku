@@ -241,13 +241,15 @@ Sintesis hasil NLP teks (sentimen & BERTopic) dengan 4 metode lainnya (Autokorel
 
 Seluruh output eksperimen NLP tersimpan dalam folder `output/` dan `output/rag_documents/`:
 
-### 📊 Berkas Tabel & Dataset (`output/`) — 16 Berkas CSV/TXT
-1. `dataset_final_dengan_topik_sentimen.csv` (~1.9 MB) — Dataset utama 2.266 dokumen lengkap dengan label topik BERTopic, probabilitas, sentimen, dan metadata platform.
-2. `skor_prioritas_topik_final.csv` — Skor prioritas kebijakan 88 topik berbasis kombinasi volume, proporsi sentimen negatif, dan tingkat keparahan isu.
-3. `skor_prioritas_topik.csv` — Ranking awal prioritas topik sebelum pembobotan final.
-4. `topic_info.csv` — Metadata lengkap seluruh 88 topik BERTopic (Count, Name, Representation, Key Words).
-5. `topics_over_time.csv` — Matriks evolusi frekuensi dan volume topik per tahun (2021–2026).
-6. `contoh_representatif_topik.csv` — Sampel dokumen paling representatif untuk setiap topik isu.
+### 📊 Berkas Tabel & Dataset (`output/`) — 18 Berkas CSV/TXT
+1. `tabel_dikotomi_platform_sentimen.csv` — **[BARU]** Tabel statistik dikotomi platform (YouTube vs TikTok vs Twitter/X) mencakup volume, persentase sentimen, dan karakteristik wacana.
+2. `tabel_sentimen_kabkota_krisis_senyap.csv` — **[BARU]** Tabel proporsi sentimen 21 kab/kota lengkap dengan indikator korelasi spasial, paradoks, dan krisis senyap.
+3. `dataset_final_dengan_topik_sentimen.csv` (~1.9 MB) — Dataset utama 2.266 dokumen lengkap dengan label topik BERTopic, probabilitas, sentimen, dan metadata platform.
+4. `skor_prioritas_topik_final.csv` — Skor prioritas kebijakan 88 topik berbasis kombinasi volume, proporsi sentimen negatif, dan tingkat keparahan isu.
+5. `skor_prioritas_topik.csv` — Ranking awal prioritas topik sebelum pembobotan final.
+6. `topic_info.csv` — Metadata lengkap seluruh 88 topik BERTopic (Count, Name, Representation, Key Words).
+7. `topics_over_time.csv` — Matriks evolusi frekuensi dan volume topik per tahun (2021–2026).
+8. `contoh_representatif_topik.csv` — Sampel dokumen paling representatif untuk setiap topik isu.
 7. `top20_kata.csv` — Daftar 20 kata paling sering muncul dalam korpus wacana pangan.
 8. `top15_bigram.csv` — 15 frase 2-kata (bigram) paling dominan.
 9. `top15_trigram.csv` — 15 frase 3-kata (trigram) paling dominan.

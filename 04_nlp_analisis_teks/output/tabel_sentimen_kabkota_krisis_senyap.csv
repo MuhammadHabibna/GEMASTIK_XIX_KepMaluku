@@ -1,0 +1,22 @@
+Kabupaten / Kota,Total Dokumen,Negatif (%),Netral (%),Positif (%),Korelasi & Catatan Spasial
+Kepulauan Tanimbar (Maluku Tenggara Barat),73,65.75,19.18,15.07,"Krisis Terbuka #1 (% Negatif tertinggi 65.75%, gejolak pasokan kapal SEM)"
+Seram Bagian Barat,56,58.93,26.79,14.29,Kuadran Paradoks Clustering K-Means & Proyeksi Rebound PoU Naik 2028
+Buru Selatan,107,56.07,26.17,17.76,Volatilitas PoU Tertinggi se-Maluku (StdDev 7.26) & Residual Paradoks
+Buru,127,55.91,13.39,30.71,Kuadran Paradoks Clustering K-Means (Lumbung Padi tapi Keluhan Tinggi)
+Kepulauan Sula,78,53.85,23.08,23.08,"PoU Tertinggi (#1), LISA High-High Hotspot, GTWR Jarak Pelabuhan (+2.75)"
+Maluku Barat Daya,10,50.0,10.0,40.0,Wilayah Sekunder
+Kepulauan Aru,69,47.83,20.29,31.88,Wilayah Sekunder
+Pulau Morotai,156,41.03,41.67,17.31,"Volume Wacana Terbanyak (156 dok), Isu MBG & Tender Politik"
+Kota Tual,10,40.0,60.0,0.0,Wilayah Sekunder
+Halmahera Barat,18,38.89,27.78,33.33,Wilayah Sekunder
+Halmahera Tengah,47,38.3,40.43,21.28,"PoU Terendah (#21), LISA Low-Low Coldspot Persisten (4/6 thn)"
+Kota Ternate,47,31.91,44.68,23.4,Wilayah Sekunder
+Halmahera Selatan,26,30.77,38.46,30.77,Wilayah Sekunder
+Seram Bagian Timur,88,27.27,43.18,29.55,Wilayah Sekunder
+Maluku Tenggara,19,26.32,26.32,47.37,Wilayah Sekunder
+Halmahera Utara,16,25.0,37.5,37.5,Wilayah Sekunder
+Kota Tidore Kepulauan,59,15.25,57.63,27.12,"Kondusif / Netral Tinggi (57.6% Netral), Sentra Pemerintahan"
+Maluku Tengah,7,14.29,71.43,14.29,Wilayah Sekunder
+Kota Ambon,16,12.5,50.0,37.5,"Sentra Urban Utama, Netral/Positif Dominan (87.5%)"
+Halmahera Timur,19,10.53,36.84,52.63,Wilayah Sekunder
+Pulau Taliabu,20,5.0,45.0,50.0,"Krisis Senyap Super (% Negatif hanya 5.0% tapi PoU 34.19%, GTWR +3.05)"
