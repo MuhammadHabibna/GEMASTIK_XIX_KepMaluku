@@ -547,16 +547,16 @@ obustness_variant_A_vs_B.csv — Pengujian ketahanan spesifikasi model Variant A
 
 Identifikasi berdasarkan: (a) interpretasi faktor lokal dominan GTWR-12b (2025), (b) nilai koefisien lokal untuk faktor kunci, dan (c) status krisis senyap (X27).
 
-| Rank | Kab/Kota | PoU 2025 | Faktor Dominan (GTWR 2025) | Koefisien Kritis | Relevansi Metode Lain |
+| Rank | Kab/Kota | PoU 2025 | Faktor Dominan (GTWR) | Koefisien Kritis | Relevansi Metode Lain |
 |------|----------|----------|-----------------------------|------------------|----------------------|
-| 1 | **Pulau Taliabu** | 34.19% | X13c Jarak Pelabuhan | **+3.045** (tertinggi se-Maluku) | LISA HH Hotspot; Clustering C0; NLP Krisis Senyap Super (20 dok) |
-| 2 | **Kepulauan Sula** | 37.36% | X13c + X8 PDRB | +2.75 / −2.32 | LISA HH Hotspot persisten; Clustering C0 paradoks; Forecasting #1 terburuk stabil |
+| 1 | **Pulau Taliabu** | 34.19% | X13c Jarak Pelabuhan | **+3.045** (tertinggi, dari tabel interpretasi faktor GTWR-12b notebook) | LISA HH Hotspot 2020–2021; Clustering C0; NLP Krisis Senyap Super (20 dok) |
+| 2 | **Kepulauan Sula** | 37.36% | X13c + X8 PDRB | +2.75 / −2.32 | LISA HH Hotspot 2020–2021; Clustering C0 paradoks; Forecasting #1 terburuk stabil |
 | 3 | **Seram Bagian Barat** | 32.94% | X13b Kunjungan Kapal + X1 Perikanan | −2.55 / +1.64 (anomali) | Paradoks produksi: X1 positif → produksi tinggi PoU juga tinggi; NLP #2 sentimen negatif |
 | 4 | **Maluku Tengah** | 30.26% | X13b + X27 Wacana | −1.48 / −0.44 | Konektivitas kapal & wacana digital terlemah di Maluku; Forecasting lompat +7 peringkat 2025→2028 |
 | 5 | **Halmahera Tengah** | 19.03% | X8 PDRB (pelindung parsial) | −2.12 | Clustering C3 Enklave; PDRB tinggi hanya melindungi secara parsial; PoU mulai naik di Forecasting |
 
 **Catatan interpretasi:**
-- Pulau Taliabu memiliki koefisien Jarak ke Pelabuhan Induk (X13c = +3.045) tertinggi se-Maluku, yang berarti **setiap unit peningkatan jarak pelabuhan mendorong PoU naik paling kuat** di wilayah ini.
+- Pulau Taliabu memiliki koefisien Jarak ke Pelabuhan Induk (X13c = +3.045) tertinggi se-Maluku berdasarkan tabel `interpretasi_faktor_lokal_per_kabkota.csv` yang diekstrak notebook GTWR-12b. Nilai GTWR lokal per-tahun untuk X13c Pulau Taliabu berkisar antara +1.76 (2020) hingga +3.73 (2023), kemudian +1.89 di 2025. Nilai 3.045 mencerminkan koefisien representatif yang dilaporkan notebook.
 - Seram Bagian Barat menunjukkan anomali unik: koefisien X1 (Produksi Perikanan) bernilai **positif** (+1.64) — artinya produksi perikanan yang lebih tinggi justru berkorelasi dengan PoU lebih tinggi. Ini membuktikan *bottleneck* pada rantai distribusi, bukan pada kapasitas produksi.
 - Tujuh wilayah **"Krisis Senyap"** (PoU tinggi + X27 mendekati nol): Kepulauan Sula, Pulau Taliabu, Buru Selatan, Halmahera Barat, Seram Bagian Timur, Kepulauan Aru, Pulau Morotai. Di antara ini, Kepulauan Sula dan Pulau Taliabu paling kritis karena dikonfirmasi oleh 4–5 metode sekaligus.
 

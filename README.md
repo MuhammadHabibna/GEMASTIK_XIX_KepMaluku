@@ -27,12 +27,12 @@ RESULT GEMASTIK 26 NEW/
 
 | Indikator | Nilai |
 |-----------|-------|
-| Moran's I global (rata-rata 2020–2025) | 0.03–0.29 (tidak signifikan mayoritas) |
-| Tahun dengan Moran tertinggi (k=4 tetangga) | 2025 (*I* = **0.283**, p = 0.017) |
-| Wilayah Hotspot LISA persisten | **Kepulauan Sula** (2×) & **Pulau Taliabu** (2×) — High-High |
+| Moran's I global (rata-rata 2020–2025) | 0.029–0.286 (signifikan mulai 2023) |
+| Tahun dengan Moran tertinggi (k=4 tetangga) | 2024 (*I* = **0.286**, p = 0.016); 2025: *I* = 0.283, p = **0.014** |
+| Wilayah Hotspot LISA persisten | **Kepulauan Sula** (2× di 2020–2021) & **Pulau Taliabu** (2× di 2020–2021) — High-High |
 | Wilayah Coldspot LISA paling stabil | **Halmahera Selatan** (6×) & **Halmahera Tengah** (4×) — Low-Low |
 
-**Fakta kunci:** Pola spasial PoU baru muncul signifikan di tahun 2025, menunjukkan klasterisasi kerawanan pangan **semakin menguat** setelah 2023. Kepulauan Sula dan Pulau Taliabu konsisten menjadi zona ketidakcukupan tinggi yang saling menguatkan antar-tetangga.
+**Fakta kunci:** Pola klaster spasial PoU mulai signifikan sejak 2023 (p=0.041) dan semakin kuat pada 2024–2025. Kepulauan Sula dan Pulau Taliabu menjadi High-High LISA Hotspot pada 2020–2021, sementara Getis-Ord Gi* menunjukkan 2025 hanya menghasilkan Coldspot (Halmahera Selatan, Halmahera Tengah) tanpa Hotspot signifikan — klasterisasi kerawanan pangan di wilayah terpencil semakin terdisolasi.
 
 ---
 
@@ -60,8 +60,9 @@ RESULT GEMASTIK 26 NEW/
 
 | Fitur | Pengaruh Global (SEM) | Arah | Interpretasi |
 |-------|-----------------------|------|--------------|
-| PDRB per Kapita (X8) | −3.481 (SEM) | Negatif | PDRB tinggi → PoU turun di semua wilayah |
-| Kunjungan Kapal (X13b) | −3.481 (SEM, p=0.001) | Negatif | Konektivitas maritim mengurangi PoU |
+| PDRB per Kapita (X8) | **−3.930** (SEM, p<0.001) | Negatif | PDRB tinggi → PoU turun di semua wilayah |
+| Kunjungan Kapal (X13b) | **−3.481** (SEM, p=0.001) | Negatif | Konektivitas maritim mengurangi PoU |
+| Efek Limpahan Spasial (SAR W_Y) | **+0.487** (SAR, p=0.004) | Positif | PoU tinggi di satu wilayah memengaruhi tetangga |
 | Visibilitas Wacana (X27) | Bervariasi lokal (GTWR) | Negatif–positif | Krisis senyap di wilayah terpencil |
 
 **Tren temporal GTWR (koefisien 3 fitur utama, 2020→2025):**
@@ -94,7 +95,9 @@ RESULT GEMASTIK 26 NEW/
 
 ### Metode 05 — Forecasting (XGBoost)
 
-**Model terpilih:** XGBoost multi-output (RMSE ≈ 2.4, MAE ≈ 1.8)
+**Model terpilih:** XGBoost multi-output (**MAE = 2.245, RMSE = 2.814**) vs ElasticNet (MAE=2.662, RMSE=3.255)
+
+**Feature Importance (Top 5):** karakteristik dasar kab/kota 43.2% · lag PoU 18.6% · pangsa pangan 11.7% · PDRB 7.3% · kemiskinan 4.7%
 
 **Proyeksi PoU 2025 → 2028 (21 kab/kota):**
 
@@ -116,7 +119,7 @@ Berikut 5 wilayah yang paling penting secara analitis — masing-masing dikonfir
 
 | Metode | Temuan |
 |--------|--------|
-| **01 LISA** | High-High Hotspot (2× persisten, 2024–2025) — zona PoU tinggi bercluster |
+| **01 LISA** | High-High Hotspot (2× persisten, **2020–2021**) — zona PoU tinggi bercluster |
 | **02 Clustering** | Kluster C0 "Rawan Konsumsi Tanpa Kemiskinan Ekstrem" — paradoks distribusi |
 | **03 GTWR** | X13c (Jarak Pelabuhan) = **+2.75** — isolasi fisik terbukti paling berat |
 | **04 NLP** | 78 dok, **53.85% negatif** (#5 tertinggi), X27=1 → *krisis senyap* |
@@ -144,7 +147,7 @@ Berikut 5 wilayah yang paling penting secara analitis — masing-masing dikonfir
 
 | Metode | Temuan |
 |--------|--------|
-| **01 LISA** | High-High Hotspot (2× persisten) — klaster PoU tinggi bersama Kep. Sula |
+| **01 LISA** | High-High Hotspot (2× persisten, **2020–2021**) — klaster PoU tinggi bersama Kep. Sula |
 | **02 Clustering** | Kluster C0 "Rawan Konsumsi" — produksi lokal tinggi tapi pangan tak tersalur |
 | **03 GTWR** | X13c = **+3.045** (tertinggi se-Maluku) — jarak pelabuhan paling mematikan |
 | **04 NLP** | 20 dok, **5.00% negatif** (terendah!) vs PoU 34.19% → *Krisis Senyap Super* |

@@ -5,7 +5,7 @@ Proyek GEMASTIK XIX/2026 (Divisi Data Mining) meramalkan Prevalensi Ketidakcukup
 
 ## Metodologi Forecasting
 - Model panel (menggabungkan seluruh 21 kabupaten/kota x tahun menjadi satu dataset 126 baris) dipilih dibanding model univariat per kabupaten/kota, karena tiap unit hanya memiliki 6 observasi tahunan -- terlalu sedikit untuk deret waktu klasik. Fitur: lag PoU, target encoding karakteristik dasar kabupaten/kota (kab_hist_mean), Indeks Kapasitas Pangan, kemiskinan, PDRB, kepadatan, IPM, pangsa pengeluaran pangan, dan tahun.
-- Dua model dibandingkan lewat backtesting walk-forward (latih 2021-2023, uji rekursif 2024-2025): ElasticNet dan XGBoost. Model terpilih: XGBoost (Panel, Ditala) (MAE backtesting=2.245).
+- Dua model dibandingkan lewat backtesting walk-forward (latih 2021-2023, uji rekursif 2024-2025): ElasticNet dan XGBoost. Model terpilih: XGBoost (Panel, Ditala) (**MAE backtesting = 2.245, RMSE = 2.814**) vs ElasticNet (MAE = 2.662, RMSE = 3.255).
 - Kedalaman pohon XGBoost sengaja dibatasi minimal 2 (bukan 1) pada grid search, karena percobaan awal menunjukkan pohon terlalu dangkal dengan one-hot encoding kabupaten/kota menghasilkan forecast yang identik/flat antar banyak unit -- meski MAE backtesting sedikit lebih rendah, hasil tersebut kurang informatif. Target encoding (kab_hist_mean) menggantikan one-hot encoding untuk memampatkan informasi identitas kabupaten/kota menjadi satu fitur kontinu.
 - Fitur eksogen untuk 2026-2028 (kemiskinan, PDRB, kepadatan, kapasitas produksi, IPM, pangsa pengeluaran pangan) ditahan konstan pada nilai 2025 (asumsi ceteris paribus) karena nilai masa depan belum tersedia.
 
